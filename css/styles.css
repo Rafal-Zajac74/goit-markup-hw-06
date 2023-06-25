@@ -742,12 +742,9 @@ font-size: 20px;
 line-height: 1.15;
 text-align: center;
 letter-spacing: 0.03em;
-margin: 40px 40px 8px;
+margin: 40px 40px 30px;
 }
-.input-icons{
-position: relative;
-margin: auto;
-}
+
 .form-label{
 width: 448px;
 height: 40px;
@@ -760,11 +757,8 @@ text-align: left;
 margin: 0 40px 28px 40px;
 flex-direction: column;
 border: 1px solid rgba(33, 33, 33, 0.2);
+outline: none;
 border-radius: 4px;
-}
-.div-box{
-width: 448px;
-margin: 0 auto;
 }
 .icons-form{
 margin-top: 13px;
@@ -773,20 +767,25 @@ position: absolute;
 }
 .text-label{
 font-size: 12px;
-line-height: 2;
+line-height: 1.17;
 letter-spacing: 0.01em;
 color: var(--grey-text-color);
+position: absolute;
 }
 .form-input{
-width: 448px;
-height: 40px;
+
 }
 .textarea{
 width: 448px;
 height: 120px;
 resize: none;
 border: 1px solid rgba(33, 33, 33, 0.2);
+outline: none;
 border-radius: 4px;
+margin: 0 auto;
+padding: 0;
+position: absolute;
+left: 40px;
 }
 .modal-checkbox {
 position: relative;

@@ -468,7 +468,7 @@ height: 252px;
 }
 .footer-div{
 display: inline-flex;
-justify-content: left;
+justify-content: space-around;
 align-items: center;
 margin: 0;
 }
@@ -517,6 +517,72 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 }
+.newsletter-button{
+width: 200px;
+height: 50px;
+color: var(--main-white-color);
+background: var(--blue-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.06em;
+padding: 0;
+position: relative;
+cursor: pointer;
+bottom: 5px;
+}
+.newsletter-label{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--main-white-color);
+margin: 0;
+position: absolute;
+top: -40px;
+}
+.newsletter-label>span{
+bottom: 20px;
+}
+.newsletter-mail{
+margin: 87px 15px 0 143px;
+position: relative;
+}
+.newsletter-mail>form{
+display: inline;
+}
+.newsletter-input{
+width: 358px;
+height: 50px;
+background: inherit;
+color: rgba(255, 255, 255, 0.6);
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+padding: 0;
+margin-right: 12px;
+}
+.newsletter-icon{
+position: absolute;
+top: 13px;
+right: 28px;
+}
+.newsletter-button-span{
+position: absolute;
+left: 42px;
+top: 10px;
+}
+.newsletter-input:focus-within{
+border: 1px solid var(--blue-color);
+outline: none;
+}
+.newsletter-button:hover{
+background:#0f85e5
+}
+
 /*Portfolio*/
 
 .buttons{
@@ -643,17 +709,17 @@ padding: 0;
 .backdrop{
 display: flex;
 position: fixed;
-width: 1600px;
 height: 1025px;
 top: 0;
 left: 0;
+right: 0;
 background-color:
 rgba(0, 0, 0, 0.2);
 }
 .modal{
 width: 528px;
 height: 581px;
-margin: 141px 536px 221px 336px;
+margin: auto;
 background-color: #ffffff;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -661,11 +727,73 @@ position: absolute;
 display: flex;
 justify-content: right;
 border-radius: 4px;
-left: 48px;
-top: 80px;
+left: 336px;
+right: 336px;
+top: 221px;
 }
-.icon-vector{
+.icon-close{
 width: 30px;
 height: 30px;
 margin: 8.5px 8.5px;
+}
+.header-modal{
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+margin: 40px 40px 8px;
+}
+.input-icons{
+position: relative;
+margin: auto;
+}
+.form-label{
+width: 448px;
+height: 40px;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.01em;
+color: var(--grey-text-color);
+display: flex;
+text-align: left;
+margin: 0 40px 28px 40px;
+flex-direction: column;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+.div-box{
+width: 448px;
+margin: 0 auto;
+}
+.icons-form{
+margin-top: 13px;
+margin-left: 14px;
+position: absolute;
+}
+.text-label{
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.01em;
+color: var(--grey-text-color);
+}
+.form-input{
+width: 448px;
+height: 40px;
+}
+.textarea{
+width: 448px;
+height: 120px;
+resize: none;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+.modal-checkbox {
+position: relative;
+top: 20px;
+width: 16px;
+height: 15px;
+-moz-appearance: none;
+-webkit-appearance: none;
+appearance: none;
 }
